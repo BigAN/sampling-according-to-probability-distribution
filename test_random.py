@@ -18,6 +18,7 @@ def random_distr(l):
 l = [(4,0.4),(3,0.3),(2,0.2),(1,0.1)]
 
 def generate_random(l):
+    # 实现将一个列表全部随机出来，每次随机出来的数字pop。效率可以优化。
     for _ in xrange(len(l)):
         rrsn = random_distr(l)
         l[rrsn],l[-1] = l[-1],l[rrsn]
